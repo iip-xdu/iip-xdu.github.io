@@ -142,7 +142,7 @@
         z-index: 999;
         background: transparent !important;
     }
-    
+
     .sticky-top.navbar-dark {
         position: fixed;
         background: var(--dark) !important;
@@ -152,7 +152,7 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
+    background: linear-gradient(rgba(15, 23, 43, .85), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,10 +162,10 @@
     animation: imgRotate 50s linear infinite;
 }
 
-@keyframes imgRotate { 
-    100% { 
-        transform: rotate(360deg); 
-    } 
+@keyframes imgRotate {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -370,6 +370,30 @@
 }
 
 .team-item .btn {
+    border-radius: 38px 38px 0 0;
+}
+
+
+.team-item-stu {
+    padding: 38px 0;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    height: calc(100% + 38px);
+    transition: .5s;
+}
+
+.team-item-stu img {
+    transition: .5s;
+}
+
+.team-item-stu:hover img {
+    transform: scale(1.1);
+}
+
+.team-item-stu:hover {
+    height: 100%;
+}
+
+.team-item-stu .btn {
     border-radius: 38px 38px 0 0;
 }
 
