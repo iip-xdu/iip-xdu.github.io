@@ -501,3 +501,26 @@
     padding-right: 0;
     border-right: none;
 }
+
+/* Highlight for person names in Recent News */
+.news-name {
+    color: #B45309;
+    background: rgba(254, 161, 22, .16);
+    padding: 0 .25rem;
+    border-radius: .2rem;
+}
+
+/* Research Projects: stack image above text on narrow (portrait) screens */
+@media (max-width: 991.98px) {
+    .project-card > .project-card-img {
+        padding-bottom: .5rem !important;
+    }
+    .project-card > .project-card-img img {
+        width: 100%;
+        max-height: 220px;
+        object-fit: contain;
+    }
+    .project-card > .project-card-body {
+        padding-top: .5rem !important;
+    }
+}
