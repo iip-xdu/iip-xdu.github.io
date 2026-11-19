@@ -510,6 +510,18 @@
     border-radius: .2rem;
 }
 
+/* Award annotation in publication lists */
+.award-tag {
+    display: inline-block;
+    background: #FEA116;
+    color: #fff;
+    padding: 0 .5rem;
+    border-radius: .25rem;
+    font-size: .85rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
 /* Research Projects: stack image above text on narrow (portrait) screens */
 @media (max-width: 991.98px) {
     .project-card > .project-card-img {
