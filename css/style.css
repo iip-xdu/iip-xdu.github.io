@@ -5,6 +5,12 @@
     --dark: #0F172B;
 }
 
+/* Latin text always uses Heebo (the English UI font); Chinese falls back to
+   a native CJK font, so mixed-language lines stay airy and consistent. */
+body {
+    font-family: 'Heebo', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
+}
+
 .ff-secondary {
     font-family: 'Pacifico', cursive;
 }
